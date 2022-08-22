@@ -1,0 +1,37 @@
+-- step 1 : checkout the branch where you want to create tag
+git checkout master
+
+-- step2 : create tag and tagname (light weight tag)
+git tag v1.0
+
+-- to check if tag is created
+git tag
+
+-- anotated tag
+git tag -a v1.1 -."tag for release ver 1.1"
+
+--step 3: display or show tag
+git tag
+git show v1.0
+git tag -l "v1.*"
+
+-- step 4: push tags to remote
+git push origin v1.0
+
+-- to push all tags at once
+git push origin --tags
+git push --tags
+
+--step 5: delete tag
+git tag -d v1.0
+git tag --delete v1.1
+
+--to delete tag from remote
+git push origin -d v1.0
+git push origin --delete v1.0
+git push origin :v1.0
+
+--to delete multiple tags
+git tag -d v1.0 v1.1 -- local
+git push origin -d v1.0 v1.1 -- remote
+
