@@ -1,0 +1,71 @@
+git is source control tool whereas github is code repository 
+
+git --version
+
+git config --global user.email "ramessh.ec@gmail.com"
+git config --global user.name "vp-ramesh"
+
+git remote add origin https://github.com/VP-Ramesh/Source_Code_Repo1.git 
+--remote needs one time initialization as long as we work on same repo
+
+git init
+
+git status
+
+git add source_file.txt or git add .
+
+git status
+
+git commit -m "Committing source file" .
+
+git push -u origin master  --> Pushes the code to remote repo
+
+git log
+
+git --help
+
+********** branch helps to create the local version
+
+git brach MyNewBranch
+
+git checkout MyNewBranch --> Switch to new branch
+
+git clone repo-name
+
+--Make all the neccessary changes
+
+git push -u origin MyNewBranch  --> Pushes branch to the remote github
+
+git checkout master
+
+git merge MyNewBranch  ---> TO merge with the master branch
+
+git push -u origin master -> To Push the code to master in the remote machine
+
+git branch -d MyNewBranch  --> TO delete the brach locally
+
+git push origin --delete MyNewBranch --> To delete the branch from remote machine
+
+--- tag help to fix the statble version point 
+
+git checkout master
+
+git tag v1.0  -> Create new tag / git tag -a v1.1 -m "Giving the details for the tag"   -> Create the tag with the details
+
+git tag   -> TO check the tag status
+
+git show v1.0 -> to show the tag details
+
+git push origin v1.0
+
+git tag -d v1.0 -> To delete the tag from local machine
+
+git push origin --delete v1.0  -> To delete the tag from remote machine
+
+----
+
+git rebase master -> so brach gets all the latest files from master
+
+---
+git clone -b <branchname> <remote-repo-url>
+----
